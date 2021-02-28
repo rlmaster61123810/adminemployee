@@ -23,6 +23,12 @@ public class Employee {
 	
 	@Column(name = "email")
 	private String email;
+
+	@Column(name = "age")
+	private String age;
+
+	@Column(name = "image")
+	private String image;
 	public long getId() {
 		return id;
 	}
@@ -47,4 +53,19 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+
+
 }
