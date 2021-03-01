@@ -47,8 +47,7 @@
 							เบอร์โทรติดต่อ</a>
 					</th>
 					<th>
-						<a th:href="@{'/page/' + ${currentPage} + '?sortField=&sortDir=' + ${reverseSortDir}}">
-							จัดการข้อมูล </a> 
+							จัดการข้อมูล 
 					</th>
 				</tr>
 			</thead>
@@ -59,9 +58,22 @@
 					<td th:text="${employee.email}"></td>
 					<td th:text="${employee.age}"></td>
 					<td th:text="${employee.phone}"></td>
-
+					<script type="text/javascript">
+ 
+						function testConfirmDialog()  {
+				
+							 var result = confirm("คุณต้องการลบใช่หรือไม่");
+				
+							 if(result)  {
+								 alert("ตกลง");
+							 } else {
+								 alert("");
+							 }
+						}
+				
+					 </script>
 					<td> <a th:href="@{/showFormForUpdate/{id}(id=${employee.id})}" class="btn btn-primary">แก้ไข</a>
-					    <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger">ลบ</a>
+					    <a onclick="testConfirmDialog()"th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger">ลบ</a>
 					</td>
 				</tr>
 			</tbody>
