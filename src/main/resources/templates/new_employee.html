@@ -28,19 +28,19 @@
 		<form action="#" th:action="@{/saveEmployee}" th:object="${employee}"
 			method="POST">
 			<input type="text" th:field="*{firstName}"
-				placeholder="Employee First Name" class="form-control mb-4 col-4">
+				placeholder="Employee first Name" class="form-control mb-4 col-4">
 				
 				<input type="text" th:field="*{lastName}"
-				placeholder="Employee Last Name" class="form-control mb-4 col-4">
+				placeholder="Employee last Name" class="form-control mb-4 col-4">
 				
 				<input type="text" th:field="*{email}"
-				placeholder="Employee Email" class="form-control mb-4 col-4">
+				placeholder="Employee email" class="form-control mb-4 col-4">
 
 				<input type="text" th:field="*{age}"
 				placeholder="Employee age" class="form-control mb-4 col-4">
 				
-				<input type="text" th:field="*{Image}"
-				placeholder="Employee Image" class="form-control mb-4 col-4">
+				<input type="text" th:field="*{phone}"
+				placeholder="Employee phone" class="form-control mb-4 col-4">
 				<button type="submit" class="btn btn-info col-2"> บันทึกข้อมูล</button>
 		</form>
 		

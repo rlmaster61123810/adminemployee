@@ -27,8 +27,9 @@ public class Employee {
 	@Column(name = "age")
 	private String age;
 
-	@Column(name = "image")
-	private String image;
+	@Column(name = "phone")
+	private String phone;
+	
 	public long getId() {
 		return id;
 	}
@@ -59,11 +60,11 @@ public class Employee {
 	public void setAge(String age) {
 		this.age = age;
 	}
-	public String getImage() {
-		return image;
+	public String getPhone() {
+		return phone;
 	}
-	public void setImage(String image) {
-		this.image = image;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 
